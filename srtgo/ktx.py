@@ -662,6 +662,10 @@ class Korail:
         if self.verbose:
             print(f"[*] {msg}")
 
+    @property
+    def is_login(self):
+        return self.logined
+
     def _generate_sid(self, ts):
         plaintext = f"{self._device}{ts}".encode("utf-8")
         cipher = AES.new(self._sid_key, AES.MODE_CBC, iv=self._sid_key)
