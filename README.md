@@ -19,3 +19,52 @@
 
 ## Acknowledgments
 - This project includes code from [SRT](https://github.com/ryanking13/SRT) by ryanking13, licensed under the MIT License, and [korail2](https://github.com/carpedm20/korail2) by carpedm20, licensed under the BSD License.
+
+## Development Setup
+
+This project requires Python 3.10 or later.
+
+### 1. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+### 2. Activate the virtual environment
+
+Windows PowerShell:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Windows Command Prompt:
+
+```cmd
+.venv\Scripts\activate.bat
+```
+
+macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install --upgrade pip
+pip install -e .
+```
+
+### 4. Run the program
+
+```bash
+srtgo
+```
+
+If the command is not recognized, run it as:
+
+```bash
+python -m srtgo.srtgo
+```
